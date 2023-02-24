@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(242, 112, 156),
+          rgb(255, 148, 114)
+        );
+        color: rgb(45, 44, 44);
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 500;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        font-family: "Roboto Mono", monospace;
+        font-size: 13px;
+        text-align: justify;
+        letter-spacing: 0.4px;
+      }
+
+      a {
+        text-decoration: none;
+        font-family: "Roboto Mono", monospace;
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        color: #d9232f;
+        display: block;
+        text-align: center;
+        transition: all 150ms ease-in-out;
+      }
+      a:hover {
+        transform: scale(1.1);
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        color: whitesmoke;
+        background: rgb(45, 44, 44);
+        font-family: "Roboto Mono", monospace;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        color: rgb(45, 44, 44);
+        background: whitesmoke;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        margin-bottom: 0;
+        background: rgba(255, 255, 255, 0.65);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 30px rgba(45, 44, 44, 0.25);
+      }
+
+      .image1 {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .image1:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .image-gallery {
+        margin: 5px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 8px;
+      }
+      .image-gallery img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .image-gallery img:hover {
+        transform: scale(1.5);
+      }
+
+      .footer {
+        text-align: center;
+        margin: 20px 0;
+        color: whitesmoke;
+        font-family: "Roboto Mono", monospace;
+        font-size: 9px;
+      }
+
+      .dark {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(0, 0, 0) 0%,
+          rgb(64, 64, 64) 90.2%
+        );
+        color: whitesmoke;
+      }
+
+      .dark .container {
+        background: rgb(45, 44, 44);
+      }
+
+      .dark a {
+        color: whitesmoke;
+      }
+
+      .dark button {
+        color: rgb(45, 44, 44);
+        background: whitesmoke;
+      }
+
+      .dark button:hover {
+        color: whitesmoke;
+        background: linear-gradient(
+          to right,
+          rgb(242, 112, 156),
+          rgb(255, 148, 114)
+        );
+      }
+    </style>
+    <title>Kickboxing</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kickboxing</h1>
+      <h2>🥊 My favourite sport 🥊</h2>
+      <a href="https://en.wikipedia.org/wiki/Kickboxing" target="_blank">
+        <img
+          src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2lja2JveGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          alt="Woman boxing"
+          class="image1"
+        />
+      </a>
+      <div class="image-gallery">
+        <img
+          src="https://images.unsplash.com/photo-1520529301226-42abc4cd766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8JTIza2lja2JveGluZyUyMHdvbWFufGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          alt="Man kickboxing"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1486215397028-cb4f31efea3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8a2lja2JveGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          alt="Two men in the ring"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8a2lja2JveGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          alt="Walking towards the ring"
+        />
+      </div>
+      <p>
+        Kickboxing is a combat sport focused on kicking and punching. The fight
+        takes place in a boxing ring, normally with boxing gloves, mouth guards,
+        shorts, and bare feet to favor the use of kicks. Kickboxing is practiced
+        for self-defense, general fitness, or for competition.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Kickboxing" target="_blank"
+        >📖 Learn more on Wikipedia
+      </a>
+    </div>
+    <button id="theme-button">Change theme</button>
+    <div class="footer">Coded by Chiara Pelosi</div>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector("#theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
